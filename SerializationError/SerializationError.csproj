@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>SerializationError</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <Platforms>x64</Platforms>
+    <TargetFramework>net461</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Akka.Cluster" Version="1.3.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Config.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
